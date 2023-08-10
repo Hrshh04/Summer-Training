@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="quizzer.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--navbar start-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Quizzer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FRONTEND
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="quizzer for html.html">HTML</a></li>
+                  <li><a class="dropdown-item" href="quizzer for css.html">CSS</a></li>
+                  <li><a class="dropdown-item" href="quizzer for js.html">JAVASCRIPT</a></li>
+                </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="quizzer for core java.html"></a>CORE JAVA</li>
+                    <li><a class="dropdown-item" href="quizzer for oops java.html"></a>OOPS JAVA</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--navbar end-->
+      <!--instruction display-->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!--instruction display-->
+    <!--quiz box start-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quizzer</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!--quiz box end-->
+    <!--result box start-->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <!--result box end-->
+    <script src="quizzer questions for html.js"></script>
+    <script src="quizzer script.js"></script>
+
+</body>
+</html>
